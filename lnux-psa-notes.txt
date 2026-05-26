@@ -475,11 +475,13 @@ User (Owner): Read + Execute (r-x)
 Group: Read + Write (rw-)
 Others: Write (--w)
 
+
+===========Modifying permissions with chmod=====================================
 Changing File/Directory Permissions Using chmod
 The chmod command allows you to modify file permissions:
 
-+ → Add permission
-- → Remove permission
+"+" → Add permission
+"-" → Remove permission
 
 Examples:
 
@@ -501,14 +503,19 @@ File Permissions in Numeric Format
 Permissions can also be represented using numbers (0–7), where:
 
 Number	Permissions
-0	No permissions
-1	Execute only
-2	Write only
-3	Write + Execute
-4	Read only
-5	Read + Execute
-6	Read + Write
-7	Read + Write + Execute
+0	No permissions (0)
+1	Execute only   (1)
+2	Write only     (2)
+3	Write + Execute  (4+1=5)
+4	Read only      (4) 
+5	Read + Execute  (4+1=5)
+6	Read + Write    (4+2=6)
+7	Read + Write + Execute (7)
+
+===========================
+Read(r) = 4
+Write(w) = 2
+Execute (x) = 1
 Examples:
 
 # Give execute permission to all (ugo+x)
