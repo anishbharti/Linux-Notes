@@ -616,7 +616,7 @@ The zip command in Linux is used to compress files and directories into a .zip a
 Syntax:
 zip [zip-file-name] [files/directories]
 
-Example: Compressing Multiple Files
+Example: Compressing Multiple Files present in current present working directory.
 
 # Create empty text files
 touch file1.txt file2.txt file3.txt
